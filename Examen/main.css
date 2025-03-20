@@ -1,0 +1,138 @@
+/* main */
+main {
+    background-color: var(--colorFondoMain);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main section {
+    /* Puedes agregar estilos adicionales aquí si es necesario */
+}
+
+section.busqueda {
+    justify-content: center;
+    padding: 50px 10px;
+    text-align: center;
+    background-color: var(--colorFondoMain);
+}
+
+.busqueda h2 {
+    padding: 50px 0;
+    color: var(--colorTexto);
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.busqueda p {
+    color: var(--colorTexto);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5em;
+}
+
+.busqueda form {
+    justify-content: center;
+    padding-bottom: 50px;
+    display: flex;
+}
+
+input[type="search"] {
+    padding: .5rem;
+    color: var(--colorInput);
+    border: 1px solid var(--colorBordeInput);
+    border-radius: 3px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+input[type="submit"] {
+    border-radius: 3px;
+    background: var(--colorFondoBoton);
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+section.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px 10px 10px;
+}
+
+article.tarjeta {
+    max-width: 680px;
+}
+
+article.tarjeta:hover {
+    transition: all 0.3s ease-in-out;
+}
+
+.tarjeta a {
+    color: #4169e1;
+}
+
+.tarjeta a:hover {
+    color: #2249bd;
+}
+
+.tarjeta img {
+    height: 200px;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 100%;
+    border-style: none;
+}
+
+.tarjeta h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+section.navegacion {
+    padding: 20px 0;
+}
+
+section.navegacion a {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 1.1rem;
+    line-height: 50px;
+}
+
+section.navegacion a:hover {
+   
+}
+@media (max-width: 880px) {
+    section.tarjetas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    section.tarjetas {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 568px) {
+    .busqueda h2 {
+        font-size: 2rem;
+    }
+    .busqueda p {
+        font-size: 1rem;
+    }
+    section.navegacion a {
+        font-size: 1rem;
+    }
+}
+
+

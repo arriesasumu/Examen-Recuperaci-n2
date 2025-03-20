@@ -1,0 +1,56 @@
+/* header */
+header {
+    background-color: var(--colorFondoHeader);
+    border-bottom: 1px solid var(--colorBordeHeader);
+
+}
+/* nav */
+nav {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--tamañoTextoMenu);
+    ;
+
+}
+/* .logo */
+.logo {
+    padding: 0 30px;
+}
+
+/* .menu */
+.menu {
+    list-style-type: none;
+
+    display: flex;
+    gap: 20px;
+
+}
+.menu a{
+    text-decoration: none;
+    display: block;
+}
+
+
+nav a {
+    color: black;
+
+}
+nav a:hover {
+    background-color: blue;
+}
+nav a:visited {
+
+}
+nav a.suscribete {
+
+}
+nav a.suscribete:hover {
+
+}
+
+/* hamburguesa */
+.hamburguesa {
+
+}
